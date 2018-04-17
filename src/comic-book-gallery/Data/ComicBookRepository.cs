@@ -60,11 +60,7 @@ namespace comic_book_gallery.Data
 
     };
 
-        internal object GetComicBook(int? id)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public ComicBook GetComicBook(int id)
         {
             ComicBook comicBookToResturn = null;
@@ -80,5 +76,12 @@ namespace comic_book_gallery.Data
             return comicBookToResturn;
 
         }
+
+        public ComicBook[] GetComicBooks()
+        {
+            
+            return _comicBooks;
+        }
+
     }
 }
